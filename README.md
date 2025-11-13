@@ -64,51 +64,22 @@ O servidor roda em seu local Host.
 Um admin é criado automaticamente: admin@MeteFlix.com / admin123.
 
 
-Acesse o site:
+## Design e Responsividade
+Tema: Preto e Amarelo para um visual cinematográfico.  
+Abas Interativas: Transições suaves com ícones.  
+Capas: Aspect ratio 16:9, placeholder para itens sem imagem.  
+Mobile: Otimizado para telas < 768px (abas empilhadas, grid 1 coluna).  
 
-Abra Localhost no navegador.  
-Registre-se, faça login e explore!  
-📖 Uso 
-Para Usuários Comuns  
-Explorar: Veja todos os itens na aba "Explorar".  
-Pesquisar: Use filtros na aba "Pesquisar".  
-Adicionar: Faça login e use a aba "Adicionar" para subir itens com capas.  
-Para Admins  
-Faça login com admin@MeteFlix.com / admin123.  
-Botões "Deletar" aparecem nos cards para remover itens.  
-API Endpoints  
-GET /api/itens - Lista itens (com filtros: ?titulo=batman&genero=acao&ano=2020)  
-POST /api/itens - Adiciona item (requer token)  
-DELETE /api/itens/:id - Deleta item (apenas admin)  
-POST /api/register - Registra usuário  
-POST /api/login - Faz login  
-🗂️ Estrutura do Projeto 
+## Segurança  
+Senhas criptografadas com bcrypt.  
+Tokens JWT para autenticação.  
+Middleware para proteger rotas (apenas logados podem adicionar, apenas admins deletam).  
 
-´´´
-meteflix/
-├── server.js          # Backend (Express)
-├── public/
-│   ├── index.html     # Frontend HTML
-│   ├── style.css      # Estilos CSS
-│   ├── app.js         # Lógica JS
-│   └── images/        # Pasta para logo (opcional)
-├── uploads/           # Imagens de capas salvas
-├── .env               # Variáveis de ambiente
-└── package.json       # Dependências
-🎨 Design e Responsividade
-Tema: Preto e Amarelo para um visual cinematográfico.
-Abas Interativas: Transições suaves com ícones.
-Capas: Aspect ratio 16:9, placeholder para itens sem imagem.
-Mobile: Otimizado para telas < 768px (abas empilhadas, grid 1 coluna).
-🔒 Segurança
-Senhas criptografadas com bcrypt.
-Tokens JWT para autenticação.
-Middleware para proteger rotas (apenas logados podem adicionar, apenas admins deletam).
-🚀 Próximos Passos
-[ ] Integração com cloud storage (AWS S3) para imagens.
-[ ] Funcionalidade de editar itens.
-[ ] Avaliações e comentários.
-[ ] Deploy em Heroku/Vercel.
+🚀 Próximos Passos  
+[ ] Integração com cloud storage (AWS S3) para imagens.  
+[ ] Funcionalidade de editar itens.  
+[ ] Avaliações e comentários.  
+[ ] Deploy em Heroku/Vercel.  
 
 📄 Licença
 Este projeto é open-source sob a licença MIT. Veja LICENSE para detalhes.
