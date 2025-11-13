@@ -36,7 +36,7 @@ Um projeto full-stack para gerenciar e explorar filmes e séries, com autentica�
 
 Instale as dependências:
   ```
-npm install
+npm install express mongoose cors multer jsonwebtoken bcryptjs
   ```
 
 Configure o ambiente:
