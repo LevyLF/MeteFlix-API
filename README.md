@@ -30,7 +30,7 @@ Um projeto full-stack para gerenciar e explorar filmes e séries, com autentica�
    ```bash
    git clone https://github.com/seu-usuario/meteflix.git
    cd meteflix
-   Instale as dependências:   ```
+   Instale as dependências:  
 
 
 
@@ -54,8 +54,6 @@ mkdir uploads public/images
   ```
 
 Execute o servidor:
-
-
 
   ```
 node server.js
@@ -82,7 +80,7 @@ Middleware para proteger rotas (apenas logados podem adicionar, apenas admins de
 [ ] Deploy em Heroku/Vercel.  
 
 📄 Licença
-Este projeto é open-source sob a licença MIT. Veja LICENSE para detalhes.
+Este projeto é open-source sob a licença MIT. 
 
 ⭐ Se gostou, dê uma estrela no repositório!
 
